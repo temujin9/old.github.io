@@ -1,3 +1,3 @@
 ---
-layout: default
+permalink: /resume/
 ---
