@@ -1,5 +1,14 @@
+{% capture destination %}
+{% if page.target %}{{ page.target }}{% else %}{{ page.url }}{% endif %}
+{% endcapture %}
 <!DOCTYPE html>
-<head>
-    <meta http-equiv="refresh" content="0; URL='https://t9productions.com{{ page.url }}'" />
-</head>
+<html lang="en-US">
+  <meta charset="utf-8">
+  <title>Redirecting&hellip;</title>
+  <link rel="canonical" href="{{ destination }}">
+  <script>location="{{ destination }}"</script>
+  <meta http-equiv="refresh" content="0; url={{ destination }}">
+  <meta name="robots" content="noindex">
+  <h1>Redirecting&hellip;</h1>
+  <a href="{{ destination }}">Click here if you are not redirected.</a>
 </html>
