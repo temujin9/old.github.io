@@ -1,3 +1,2 @@
 ---
 ---
-{% include redirect.html %}
