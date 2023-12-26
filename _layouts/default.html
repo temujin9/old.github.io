@@ -1,8 +1,8 @@
-{% capture destination %}{% if page.target %}{{ page.target }}{% else %}{{ page.url }}{% endif %}{% endcapture %}
+{% capture destination %}https://t9productions.com{% if page.target %}{{ page.target }}{% else %}{{ page.url }}{% endif %}{% endcapture %}
 <!DOCTYPE html>
 <html lang="en-US">
   <meta charset="utf-8">
-  <title>Redirecting&hellip;</title>
+  <title>Redirecting</title>
   <link rel="canonical" href="{{ destination }}">
   <script>location="{{ destination }}"</script>
   <meta http-equiv="refresh" content="0; url={{ destination }}">
