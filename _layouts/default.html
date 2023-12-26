@@ -1,6 +1,4 @@
-{% capture destination %}
-{% if page.target %}{{ page.target }}{% else %}{{ page.url }}{% endif %}
-{% endcapture %}
+{% capture destination %}{% if page.target %}{{ page.target }}{% else %}{{ page.url }}{% endif %}{% endcapture %}
 <!DOCTYPE html>
 <html lang="en-US">
   <meta charset="utf-8">
